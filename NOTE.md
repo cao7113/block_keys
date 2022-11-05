@@ -8,6 +8,7 @@ brew install gmp
 22.3.4.26
 https://github.com/RiverFinancial/bitcoinex/issues/13
 work on otp-22?
+not work!!!
 
 https://github.com/ethereum/go-ethereum/issues/1617
 
@@ -19,7 +20,7 @@ automake libtool inotify-tools autoconf
 
 https://github.com/ethereum/go-ethereum/issues/1617
 sudo apt-get install libgmp3-dev
-worksb
+works!!!
 
 mix clean --deps && mix compile
 
