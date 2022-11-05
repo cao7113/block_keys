@@ -13,7 +13,10 @@ defmodule WalletTest do
 
       xpub =
         BlockKeys.CKD.derive(root_key, path)
-        |> IO.inspect(label: "derive xpub key")
+        |> IO.inspect(label: "derive pub key")
+
+      BlockKeys.CKD.derive(root_key, "m/44'/60'/0'/0/0")
+      |> IO.inspect(label: "derive priv key")
 
       xpub
       |> BlockKeys.Ethereum.Address.from_xpub()
