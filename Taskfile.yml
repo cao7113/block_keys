@@ -2,3 +2,4 @@
 version: "3"
 tasks:
   rebuild: mix clean --deps && mix compile
+  sh: iex --erl "-kernel shell_history enabled" -S mix
