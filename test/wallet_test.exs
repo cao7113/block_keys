@@ -6,8 +6,9 @@ defmodule WalletTest do
     test "ok" do
       mnemo =
         "wave album humble cinnamon security welcome bulk debate also flash physical fortune dwarf great prize okay brief peanut piano enrich sugar rifle account crumble"
+        |> IO.inspect(label: "mnemo")
 
-      root_key = BlockKeys.from_mnemonic(mnemo)
+      root_key = BlockKeys.from_mnemonic(mnemo) |> IO.inspect(label: "root key")
 
       path = "M/44'/60'/0'/0/0"
 
